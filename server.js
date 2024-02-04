@@ -6,6 +6,8 @@ const app = express();
 
 dotenv.config({ path: "./config.env" });
 
+app.use(cors());
+
 app.use(express.json());
 
 // Endpoint for looking up a word in WordNet
