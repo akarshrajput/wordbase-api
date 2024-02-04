@@ -13,7 +13,9 @@ exports.lookupWord = (req, res) => {
         id: index + 1,
         gloss: definition.gloss,
       }));
-      res.json({ data: { word, definitions: result } });
+      res.json({
+        data: { word, definitions: result, by: "Akarsh Rajput" },
+      });
     }
   });
 };
