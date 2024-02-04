@@ -18,6 +18,7 @@ app.all("*", (req, res, next) => {
   res.status(404).json({
     status: "error",
     message: `Can't find ${req.originalUrl} on this server!`,
+    by: "Akarsh Rajput",
   });
 });
 
@@ -26,6 +27,7 @@ app.use((err, req, res, next) => {
   res.status(500).json({
     status: "error",
     message: "Internal Server Error",
+    by: "Akarsh Rajput",
   });
 });
 
