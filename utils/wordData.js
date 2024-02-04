@@ -13,7 +13,7 @@ exports.lookupWord = (req, res) => {
         id: index + 1,
         gloss: definition.gloss,
       }));
-      res.json({ word, definitions: result });
+      res.json({ data: { word, definitions: result } });
     }
   });
 };
