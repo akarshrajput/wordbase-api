@@ -1,5 +1,6 @@
 const express = require("express");
 const dotenv = require("dotenv");
+const cors = require("cors");
 const wordData = require("./utils/wordData");
 
 const app = express();
